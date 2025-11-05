@@ -1,0 +1,26 @@
+{
+  "name": "miweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "http-server -c-1 . -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:gh": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctrlf-website/miWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctrlf-website/miWeb/issues"
+  },
+  "homepage": "https://github.com/ctrlf-website/miWeb#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "http-server": "^14.1.1"
+  }
+}

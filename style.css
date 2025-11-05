@@ -1,0 +1,56 @@
+:root{
+  --color-bg: #ffffff;
+  --color-text: #222;
+  --accent: #005fcc;
+  --bg-alt: #f4f4f4;
+  --maxw: 900px;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --color-bg: #111;
+    --color-text: #eaeaea;
+    --bg-alt: #1a1a1a;
+  }
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height:1.6;
+  background:var(--color-bg);
+  color:var(--color-text);
+}
+
+a{color:var(--accent)}
+
+.container{
+  margin:0 auto;
+  max-width:var(--maxw);
+  padding:1rem;
+}
+
+header, main, footer{padding:1rem}
+header{border-bottom:1px solid #ccc; text-align:center}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+section, aside{margin:1.5rem 0;padding:1rem;background:var(--bg-alt);border-radius:.5rem}
+.skip-link{
+  position:absolute;left:0;top:-40px;background:var(--accent);color:#fff;padding:.4rem;z-index:100;transition:top .2s;
+}
+.skip-link:focus{top:0}
+
+/* Cards */
+#servicios ul{list-style:none;padding:0;display:grid;gap:1rem}
+#servicios img{width:100%;height:auto;border-radius:.25rem}
+
+/* Banner */
+#oferta{text-align:center;background:var(--accent);color:#fff;padding:1rem;border-radius:.5rem}
+
+/* Responsive */
+@media(min-width:600px){
+  #servicios ul{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:900px){
+  #servicios ul{grid-template-columns:repeat(3,1fr)}
+}

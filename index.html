@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Presencia Digital Simple</title>
+    <meta
+      name="description"
+      content="Sitio web accesible, rápido y optimizado para buscadores. Ideal para jóvenes profesionales, artistas y pequeñas instituciones."
+    />
+    <link rel="canonical" href="https://tusitio.example/" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Datos estructurados para SEO -->
+    <!-- <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Presencia Digital Simple",
+        "url": "https://tusitio.example/",
+        "description": "Sitio web accesible, rápido y optimizado para buscadores.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://tusitio.example/buscar?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script> -->
+
+    <!-- CSS mínimo y accesible -->
+    <!-- <style>
+    /* Estilos base y tipografía */
+    :root {
+      color-scheme: light dark;
+      --color-bg: #ffffff;
+      --color-text: #222222;
+      --color-accent: #005fcc;
+      --color-bg-alt: #f4f4f4;
+      --max-width: 900px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #111111;
+        --color-text: #eaeaea;
+        --color-bg-alt: #1a1a1a;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      background: var(--color-bg);
+      color: var(--color-text);
+    }
+
+    a {
+      color: var(--color-accent);
+    }
+
+    header, main, footer {
+      margin: 0 auto;
+      max-width: var(--max-width);
+      padding: 1rem;
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      margin: 0.2em 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5em 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    section, aside {
+      margin: 2rem 0;
+      padding: 1rem;
+      background: var(--color-bg-alt);
+      border-radius: 0.5rem;
+    }
+
+    h2, h3, h4 {
+      margin-top: 0;
+    }
+
+    /* Cards */
+    #servicios ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    #servicios img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.25rem;
+    }
+
+    /* Banner */
+    #oferta {
+      text-align: center;
+      background: var(--color-accent);
+      color: white;
+    }
+
+    #oferta a {
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      border-top: 1px solid #ccc;
+    }
+
+    footer nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      list-style: none;
+      padding: 0;
+    }
+
+    /* Responsive (tablet y escritorio) */
+    @media (min-width: 600px) {
+      #servicios ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      #servicios ul {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Accesibilidad extra */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--color-accent);
+      color: #fff;
+      padding: 0.5rem;
+      z-index: 100;
+      transition: top 0.3s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+  </style> -->
+  </head>
+
+  <body>
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner" aria-label="Encabezado principal del sitio">
+      <h1>
+        <a href="/" aria-label="Ir a la página de inicio"
+          >Presencia Digital Simple</a
+        >
+      </h1>
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+      <!-- HERO -->
+      <section id="inicio" role="region" aria-labelledby="titulo-hero">
+        <h2 id="titulo-hero">
+          Tu sitio web simple, accesible y listo para Google
+        </h2>
+        <p>
+          Creamos páginas web esenciales, económicas y totalmente accesibles —
+          ideales para profesionales, artistas o instituciones que necesitan
+          presencia digital sin complicaciones.
+        </p>
+        <p>
+          <a href="#servicios" aria-label="Ver nuestros servicios"
+            >Descubrir más</a
+          >
+        </p>
+      </section>
+
+      <!-- CARDS -->
+      <section id="servicios" role="region" aria-labelledby="titulo-servicios">
+        <h3 id="titulo-servicios">Nuestros servicios</h3>
+
+        <ul role="list" aria-label="Lista de servicios disponibles">
+          <li>
+            <article aria-labelledby="servicio1-titulo">
+              <h4 id="servicio1-titulo">Sitio básico</h4>
+              <img
+                src="/imagenes/sitio-basico.jpg"
+                alt="Ejemplo de sitio web básico con estructura limpia"
+              />
+              <p>
+                Una página única con tu información, contacto y enlaces a redes.
+                Ideal para comenzar tu presencia digital.
+              </p>
+              <p>
+                <a href="/servicio-basico" rel="noopener">Más información</a>
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article aria-labelledby="servicio2-titulo">
+              <h4 id="servicio2-titulo">Sitio profesional</h4>
+              <img
+                src="/imagenes/sitio-profesional.jpg"
+                alt="Diseño profesional de ejemplo para negocio o portafolio"
+              />
+              <p>
+                Estructura optimizada para SEO y posicionamiento local. Perfecto
+                para negocios y freelancers.
+              </p>
+              <p>
+                <a href="/servicio-profesional" rel="noopener"
+                  >Más información</a
+                >
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article aria-labelledby="servicio3-titulo">
+              <h4 id="servicio3-titulo">Sitio institucional</h4>
+              <img
+                src="/imagenes/sitio-institucional.jpg"
+                alt="Ejemplo de sitio institucional con información clara y accesible"
+              />
+              <p>
+                Presencia clara y formal para instituciones, ONG o colectivos.
+                Cumple estándares de accesibilidad y transparencia.
+              </p>
+              <p>
+                <a href="/servicio-institucional" rel="noopener"
+                  >Más información</a
+                >
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- BANNER -->
+      <aside id="oferta" role="complementary" aria-labelledby="titulo-banner">
+        <h3 id="titulo-banner">Oferta especial</h3>
+        <p>
+          Consigue tu web lista en 48 horas desde solo <strong>$20</strong>. Sin
+          contratos ni costos ocultos.
+        </p>
+        <p>
+          <a href="#contacto" aria-label="Ir a la sección de contacto"
+            >Solicitar ahora</a
+          >
+        </p>
+      </aside>
+
+      <!-- CONTACTO -->
+      <section id="contacto" role="region" aria-labelledby="titulo-contacto">
+        <h3 id="titulo-contacto">Contacto</h3>
+        <p>¿Tienes dudas o quieres comenzar? Escríbenos:</p>
+        <p>
+          Correo: <a href="mailto:info@tusitio.example">info@tusitio.example</a
+          ><br />
+          Teléfono: <a href="tel:+541112345678">+54 11 1234 5678</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" aria-label="Pie de página">
+      <nav aria-label="Enlaces legales">
+        <ul>
+          <li><a href="/accesibilidad">Declaración de accesibilidad</a></li>
+          <li><a href="/privacidad">Política de privacidad</a></li>
+          <li><a href="/terminos">Términos del servicio</a></li>
+        </ul>
+      </nav>
+      <p>
+        © <time datetime="2025">2025</time> Presencia Digital Simple. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+    <script defer src="main.js"></script>
+  </body>
+</html>
